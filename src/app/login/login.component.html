@@ -1,0 +1,21 @@
+<div class="login-form">
+  <form action="/examples/actions/confirmation.php" method="post">
+      <h2 class="text-center">Log in</h2>       
+      <div class="form-group">
+            <input type="text" class="form-control" [(ngModel)]="loginData.email" name="email" placeholder="Enter Your Email" required autofocus>
+          
+      </div>
+      <div class="form-group">
+            <input type="text" class="form-control" [(ngModel)]="loginData.password" name="password" placeholder="Enter password" required autofocus>
+
+      </div>
+      <div class="form-group">
+          <button (click)="login()" type="submit" class="btn btn-primary btn-block">Log in</button>
+      </div>
+      <div class="clearfix">
+          <label class="pull-left checkbox-inline"><input type="checkbox"> Remember me</label>
+          <a href="#" class="pull-right">Forgot Password?</a>
+      </div>        
+  </form>
+  <p class="text-center"><a href="register">Create an Account</a></p>
+</div>
